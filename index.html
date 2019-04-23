@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive video background</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: tahoma;
+      }
+
+      #home {
+        background: none;
+        height: 100%;
+      }
+
+      #home-bc-video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+      }
+
+      #home-overlay {
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      #home-content {
+        width: 100%;
+        height: 100%;
+        display: table;
+        margin-top: 260px;
+        margin-left: 30px;
+      }
+
+      #home-content-inner {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      #home-heading-1 {
+        color: white;
+        font-size: 65px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      #home-heading-2 {
+        color: white;
+        font-size: 65px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      #home-heading-2 span {
+        color: #f4c613;
+        font-weight: 700;
+      }
+
+      #home-text p {
+        color: white;
+        font-size: 15px;
+        font-weight: 100;
+        margin: 8px 0 30px 0;
+      }
+
+      .btn-general {
+        font-family: tahoma;
+        border-radius: 25px;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin: 0 6px;
+        padding-right: 12px 46px 12px 46px;
+        transition: all 0.4s;
+        background-color: #f4c613;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <secction id="home">
+      <video
+        src="Pexels Videos .mp4"
+        id="home-bc-video"
+        autoplay
+        loop
+        muted
+      ></video>
+
+      <div id="home-overlay">
+        <div id="container">
+          <div id="home-content">
+            <div id="home-content-inner" class="text-left">
+              <h1 id="home-heading-1">Mohamed Hassan</h1>
+              <h1 id="home-heading-2">Creative <span>Agency</span></h1>
+
+              <div id="home-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />
+                  sed do eiusmod tempor incididunt ut labore et dolore
+                  magna,aliqua ipsum dolor sit amet labore et dolore .
+                </p>
+              </div>
+              <div id="home-btn">
+                <a href="#" class="btn btn-general" role="button">Read Today</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </secction>
+  </body>
+</html>
